@@ -31,6 +31,7 @@ function initializePage() {
 		console.log("number of matching items: " + jumbotronHeader.length);
     jumbotronHeader.text(projectTitle);
 
+		$(this).css("background-color", "#5F9EA0");
 		var containingProject = $(this).closest(".project");
   	var description = $(containingProject).find(".project-description");
   	if (description.length == 0) {
